@@ -1,4 +1,3 @@
-import Usuario from './Usuario';
 export default interface UsuarioLogin{
     id: number
     nome: string
