@@ -1,4 +1,4 @@
 export default interface Tema {
-    id: number
+    id?: number | null
     descricao: string
 }
