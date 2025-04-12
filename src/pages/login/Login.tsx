@@ -11,6 +11,17 @@ function Login() {
 
     const { usuario, handleLogin, isLoading } = useContext(AuthContext)
 
+    /* 
+    const [usuarioLogin, setUsuarioLogin] -> cria para mim uma variavel chamada usuarioLogin
+    setUsuarioLogin -> função interna que atualiza a variável quando necessário, foi convencionado que se a variavel se chama tal, deve ser setTal
+    usuarioLogin -> toda vez que precisar atualizá-lo o React vai ficar responsável por isso através do set.
+    O que importa é a última informação
+
+    useState -> usa o controle de estado do React (controle de variáveis)
+    <UsuarioLogin> -> essa variavel só pode receber esse tipo de dado, igual no java
+    ({} as UsuarioLogin) -> inicialização da variavel, inicia ela como um objeto no padrão UsuarioLogin em branco, começa com ela com todos os dados em branco gerando um JSON do tipo UsuarioLogin mas com os valores em branco
+    */
+
     const [usuarioLogin, setUsuarioLogin] = useState<UsuarioLogin>(
         {} as UsuarioLogin
     )
