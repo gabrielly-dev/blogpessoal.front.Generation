@@ -31,6 +31,11 @@ function Login() {
             navigate('/home')
         }
     }, [usuario])
+    /**
+     * verifica se o token não é vazio, se for verdadeira usa a função navigate para redirecionar para a home
+     * o segundo argumento significa que o efeito será executado sempre que o objeto usuario mudar
+     * 
+    */
 
     function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
         setUsuarioLogin({
