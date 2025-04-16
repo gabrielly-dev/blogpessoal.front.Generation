@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: 'https://blog-pessoal-generation-pnkr.onrender.com'
+    baseURL: import.meta.env.VITE_API_URL
 })
 
 // sempre que for até o back end utilizar o async, url: string se está na barra de endereço é uma string
